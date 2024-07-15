@@ -1,4 +1,6 @@
 
+
+
 // importam cele doua functii exportate de noi in cat-api
 import { getCatBreeds, getCatByBreed } from './cat-api';
 import SlimSelect from 'slim-select'
@@ -7,7 +9,7 @@ import Notiflix from 'notiflix';
 
 // eventlistener-ul declanseaza actiunea la incarcarea continutului din DOM
 
-document.addEventListener('DOMContentLoaded', () => {
+
     const breedSelector = document.querySelector('.breed-select');
     const loader = document.querySelector('.loader');
     const error = document.querySelector('.error');
@@ -90,7 +92,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // on breed change in the selector, the value of breedSelector is set to the breedId
 //     catInfo is hidden on selection of a new breed. and a new breed is loaded
-    breedSelector.addEventListener('change', selectABreed);
-    fillBreeds();
-
-});
+breedSelector.addEventListener('change', selectABreed);
+    
+document.addEventListener('DOMContentLoaded', fillBreeds);
