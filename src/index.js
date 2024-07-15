@@ -7,7 +7,6 @@ import SlimSelect from 'slim-select'
 import 'slim-select/dist/slimselect.css';
 import Notiflix from 'notiflix';
 
-// eventlistener-ul declanseaza actiunea la incarcarea continutului din DOM
 
 
     const breedSelector = document.querySelector('.breed-select');
@@ -93,5 +92,6 @@ import Notiflix from 'notiflix';
 // on breed change in the selector, the value of breedSelector is set to the breedId
 //     catInfo is hidden on selection of a new breed. and a new breed is loaded
 breedSelector.addEventListener('change', selectABreed);
-    
+    // eventlistener-ul declanseaza actiunea la incarcarea continutului din DOM
+
 document.addEventListener('DOMContentLoaded', fillBreeds);
